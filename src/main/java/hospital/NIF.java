@@ -16,6 +16,11 @@ public class NIF {
 		letra = this.calcularLetra();
 	}
 	
+	public LocalDate renovar(LocalDate fechaSolicitud) {
+		this.fechaCaducidad = fechaSolicitud.plusYears(10);
+		return fechaCaducidad;
+	}
+	
 	private char calcularLetra() {
 		int r = 0;
 		final int CONTADOR = 23;

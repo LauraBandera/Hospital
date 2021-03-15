@@ -6,8 +6,8 @@ public class Hospital {
 
 	private String nombre, direccion;
 	private int numeroCamas;
-	ArrayList<Empleado> empleados;
-	ArrayList<Paciente> pacientes;
+	private ArrayList<Empleado> empleados;
+	private ArrayList<Paciente> pacientes;
 	
 	
 	

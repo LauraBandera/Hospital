@@ -17,7 +17,7 @@ public class Persona {
 
 	//Fecha de validez +10años desde que la persona lo renueva
 	public void renovarNIF(LocalDate fechaSolicitud) {
-		this.nif.setFechaCaducidad(fechaSolicitud.plus(10, ChronoUnit.YEARS));
+		this.nif.renovar(fechaSolicitud);
 	}
 
 	public String getNombre() {
